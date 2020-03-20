@@ -1,0 +1,188 @@
+*{
+	box-sizing: border-box;
+	font-family: "Nunito",Helvetica,Tahoma,Arial,sans-serif;
+	font-size: 14px;
+}
+
+body{
+    margin: 0;
+}
+
+.error {
+    color: red;
+    display: none;
+}
+
+.hero-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    height: 100vh;
+    position: relative;
+}
+
+.hero-left-menu {
+    background: #156dfb;
+    color: white;
+    padding: 20px;
+}
+
+.nav-ul {
+    padding: 0;
+    list-style: none;
+    margin-top: 140px;
+}
+
+.logo{
+    font-size: 40px;
+}
+
+.nav-ul li{
+    text-align: center;
+    padding: 12px 0;
+}
+
+.nav-ul li:hover {
+    box-shadow: 1px 0px 10px grey;
+    background: #4687f1;
+}
+
+.nav-ul i{
+    font-size: 26px;
+}
+
+.hero-container{
+    width: 100%;
+}
+
+.top-nav {
+    color: gray;
+    padding: 20px;
+    border-bottom: 2px solid #156dfb;
+}
+
+.top-user-bar {
+    padding: 30px 20px;
+}
+
+.star-icon {
+    font-size: 20px;
+    color: gray;
+}
+
+.people {
+    background: #dadada;
+    padding: 2px 4px;
+    border-radius: 3px;
+    margin: 0 5px;
+}
+
+.days {
+    background: #ffebc2;
+    padding: 2px 4px;
+    border-radius: 3px;
+    margin: 0 3px;
+    color: #f38a2e;
+}
+
+.hero-task-container {
+    display: flex;
+    padding: 15px;
+}
+
+#removecard {
+    position: absolute;
+    right: 8px;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    padding: 0px 3px;
+}
+
+.task-card-container {
+    background-color: #f3f5f7;
+    flex-basis: 280px;
+    margin: 13px;
+    border-radius: 7px;
+    padding: 15px 0;
+}
+
+.clipboard-icon {
+    float: right;
+}
+
+.tcc-title {
+    padding: 0 15px 15px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card-wrapper {
+    margin: 0 15px 15px;
+    padding: 15px;
+    background: white;
+    border-radius: 7px;
+    position: relative;
+}
+
+.cw-title {
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 6px;
+}
+
+.cw-descr {
+    color: #676767;
+    line-height: 1.2;
+}
+
+.cw-user {
+    padding-top: 5px;
+    color: #ed595b;
+}
+
+.add-task-bttn {
+    position: absolute;
+    z-index: 5;
+    background: #156dfb;
+    color: white;
+    font-size: 40px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 0 18px;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px){
+    .hero-task-container{
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media only screen and (max-width: 425px){
+    .logo {
+        font-size: 30px;
+    }
+    .hero-left-menu {
+        padding: 10px;
+    }
+    .nav-ul {
+        margin-top: 40px;
+    }
+    .nav-ul i {
+        font-size: 18px;
+    }
+    .top-nav {
+        padding: 10px;
+    }
+    .top-user-bar {
+        padding: 15px;
+    }
+    .hero-task-container{
+        padding: 0px;
+    }
+
+}

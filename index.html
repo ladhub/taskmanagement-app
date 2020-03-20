@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet" type="text/css">
+	<script src='js/fontawsome.js'></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+		crossorigin="anonymous">
+	<link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+	<title>Test</title>
+</head>
+
+<body>
+	<div class="hero-wrapper">
+		<div class="hero-left-menu">
+			<i class="fab fa-affiliatetheme logo"></i>
+			<ul class="nav-ul">
+				<li><i class="fas fa-home"></i></li>
+				<li><i class="fa fa-th-large"></i></li>
+				<li><i class="far fa-compass"></i></li>
+				<li><i class="far fa-comment"></i></li>
+				<li><i class="fa fa-briefcase"></i></li>
+				<li><i class="fa fa-cog"></i></li>
+			</ul>
+		</div>
+		<div class="hero-container">
+			<div class="top-nav">
+				<i class="fas fa-arrow-left"></i> All projects
+			</div>
+			<div class="top-user-bar">
+				<i class="far fa-star star-icon"></i> <span class="people"><i class="far fa-user"></i> 5 people</span>
+				<span class="days"><i class="far fa-clock"></i> 2 days left</span>
+			</div>
+			<div class="hero-task-container">
+
+				<div id="todoContainer" class="task-card-container" ondrop="drop(event)" ondragover="allowDrop(event)">
+					<div class="tcc-title">ToDo <i class="far fa-clipboard clipboard-icon"></i></div>
+				</div>
+
+				<div id="progressContainer" class="task-card-container" ondrop="drop(event)"
+					ondragover="allowDrop(event)">
+					<div class="tcc-title">In progress <i class="far fa-clipboard clipboard-icon"></i></div>
+				</div>
+
+				<div id="reviewContainer" class="task-card-container" ondrop="drop(event)"
+					ondragover="allowDrop(event)">
+					<div class="tcc-title">In review <i class="far fa-clipboard clipboard-icon"></i></div>
+				</div>
+
+				<div id="doneConatiner" class="task-card-container" ondrop="drop(event)" ondragover="allowDrop(event)">
+					<div class="tcc-title">Done <i class="far fa-clipboard clipboard-icon"></i></div>
+				</div>
+			</div>
+			<div class="add-task-bttn" data-toggle="modal" data-target="#addTaskModal">+</div>
+			<div class="modal fade" id="addTaskModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+				aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+						</div>
+						<div class="modal-body">
+							<div class="form-group">
+								<label><b>Task Title</b></label>
+								<input type="text" class="form-control" id="taskTitle" placeholder="Add Task Title">
+							</div>
+							<div class="form-group">
+								<label><b>Task Description</b></label>
+								<textarea class="form-control" id="taskDescription"
+									placeholder="Enter Task Description"></textarea>
+							</div>
+							<div class="form-group" id="usercheckbox">
+								<label><b>Assign Task : </b></label>
+								<div class="form-check">
+									<input class="form-check-input" value="Rahul Tiwari" type="checkbox" id="user1">
+									<label class="form-check-label" for="user1">
+										Rahul Tiwari
+									</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" value="Ashish Maity" type="checkbox" id="user2">
+									<label class="form-check-label" for="user2">
+										Ashish Maity
+									</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" value="Prateek Ranjan" type="checkbox" id="user3">
+									<label class="form-check-label" for="user3">
+										Prateek Ranjan
+									</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" value="Vipul Singh" type="checkbox" id="user4">
+									<label class="form-check-label" for="user4">
+										Vipul Singh
+									</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" value="Sumit Kale" type="checkbox" id="user5">
+									<label class="form-check-label" for="user5">
+										Sumit Kale
+									</label>
+								</div>
+							</div>
+							<div class="error">Please enter all valid data</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" id="closebtn" class="btn btn-secondary"
+								data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary" id="savebtn">Save changes</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
